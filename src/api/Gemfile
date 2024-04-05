@@ -2,12 +2,12 @@
 # This preamble is the current preamble for Rails 3 apps; edit as needed.
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.0'
+gem 'rails', '~> 7.0', '>= 7.0.8.1'
 
 # as our database
 gem 'mysql2'
 # for XML handling
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.15.6'
 # for delayed tasks
 gem 'delayed_job_active_record', '>= 4.0.0'
 # to fill errbit
@@ -18,11 +18,11 @@ gem 'yajl-ruby', require: 'yajl/json_gem'
 # to search the database
 gem 'thinking-sphinx', '> 3.1'
 # to paginate search results
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.2'
 # for abstract HTML
 gem 'haml'
 # streamline HAML's integration in Rails
-gem 'haml-rails'
+gem 'haml-rails', '>= 2.1.0'
 # to avoid tilt downgrade
 gem 'tilt', '>= 1.4.1'
 # to use markdown in the comment system
@@ -44,7 +44,7 @@ gem 'flot-rails'
 # XML Serialization got moved here
 gem 'activemodel-serializers-xml'
 # Spider Identification
-gem 'voight_kampff'
+gem 'voight_kampff', '>= 2.0.0'
 # for issue tracker communication
 gem 'xmlrpc'
 # Multiple feature switch
@@ -55,17 +55,17 @@ gem 'gssapi', require: false
 # for sending events to rabbitmq
 gem 'bunny'
 # for making changes to existing data
-gem 'data_migrate'
+gem 'data_migrate', '>= 6.6.0'
 # for URI encoding
 gem 'addressable'
 # for XML builder
 gem 'builder'
 # to write the rails metrics directly into InfluxDB.
-gem 'influxdb-rails', '1.0.1.beta2'
+gem 'influxdb-rails', '1.0.1'
 # for copying objects with their relations
 gem 'deep_cloneable', '~> 3.0.0'
 # Server-side datatables
-gem 'ajax-datatables-rails'
+gem 'ajax-datatables-rails', '>= 1.3.0'
 # Add syntax highlight in ruby
 gem 'coderay'
 # required by rails
@@ -82,13 +82,13 @@ group :development, :production do
   # as memcache client
   gem 'dalli'
   # to document ruby code
-  gem 'rdoc'
+  gem 'rdoc', '>= 6.3.4.1'
   # to not rely on cron+rake
   gem 'clockwork', '>= 0.7'
   # as interface to LDAP
   gem 'ruby-ldap', require: false
   # to have better logs
-  gem 'lograge'
+  gem 'lograge', '>= 0.12.0'
 end
 
 group :production do
@@ -113,7 +113,7 @@ group :test do
   # for spec like reporting
   gem 'minitest-reporters'
   # for integration testing
-  gem 'capybara'
+  gem 'capybara', '>= 3.34.0'
   # for rspec like matchers
   gem 'capybara_minitest_spec'
   # to freeze time
@@ -139,9 +139,9 @@ end
 group :development, :test do
   gem 'rspec'
   # as testing framework
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 4.0.2'
   # for fixtures
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.2.0'
   # for mocking the backend
   gem 'vcr'
   # as alternative to the standard IRB shell
@@ -151,7 +151,7 @@ group :development, :test do
   # for style checks
   gem 'rubocop', require: false
   # for rails style checks
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.9.0', require: false
   # for rspec style checks
   gem 'rubocop-rspec', require: false
   # for performance checks
@@ -186,11 +186,11 @@ group :assets do
   # assets for jQuery DataTables
   gem 'jquery-datatables'
   # assets for jQuery and jQuery-ujs
-  gem 'jquery-rails'
+  gem 'jquery-rails', '>= 4.5.0'
   # assets for jQuery-ui
-  gem 'jquery-ui-rails', '~> 4.2.1'
+  gem 'jquery-ui-rails', '~> 5.0.0'
   # assets for the bootstrap front-end framework
-  gem 'bootstrap'
+  gem 'bootstrap', '>= 4.5.3'
   # assets for font-awesome vector icons
   gem 'font-awesome-sass'
 end
