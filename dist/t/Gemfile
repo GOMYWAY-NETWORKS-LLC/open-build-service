@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'capybara'
+gem 'capybara', '>= 3.26.0'
 gem 'rspec-core'
 gem 'rspec-expectations'
 # as driver for capybara
