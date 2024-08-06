@@ -190,7 +190,7 @@ group :assets do
   # assets for jQuery-ui
   gem 'jquery-ui-rails', '~> 4.2.1'
   # assets for the bootstrap front-end framework
-  gem 'bootstrap'
+  gem 'bootstrap', '>= 5.0.0'
   # assets for font-awesome vector icons
   gem 'font-awesome-sass'
 end
