@@ -149,15 +149,15 @@ group :development, :test do
   # add step-by-step debugging and stack navigation capabilities to pry
   gem 'pry-byebug'
   # for style checks
-  gem 'rubocop', require: false
+  gem 'rubocop', '>= 1.0.0', require: false
   # for rails style checks
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.9.0', require: false
   # for rspec style checks
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec', '>= 1.44.0', require: false
   # for performance checks
-  gem 'rubocop-performance'
+  gem 'rubocop-performance', '>= 1.9.0'
   # integrates with RuboCop to analyse HAML files
-  gem 'haml_lint'
+  gem 'haml_lint', '>= 0.37.0'
   # to generate random long strings
   gem 'faker'
   # to launch browser in test
