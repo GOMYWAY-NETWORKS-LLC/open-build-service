@@ -71,7 +71,7 @@ gem 'coderay'
 # required by rails
 gem 'bigdecimal'
 # Catch unsafe migrations in development
-gem 'strong_migrations'
+gem 'strong_migrations', '>= 2.2.0'
 # for some rails console fancy
 gem 'pry-rails'
 gem 'awesome_print'
